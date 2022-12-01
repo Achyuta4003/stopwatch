@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    --color01: white;
+    --color02: orange;
+}
+
+.main {
+    background-color: var(--color02);
+    color: var(--color01);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    font-family: sans-serif;
+}
+
+.container {
+    padding: 9px;
+    border: 2px solid var(--color01);
+    box-shadow: 0 0 24px 10px rgba(0, 0, 0, 0.3);
+    height: 46rem;
+    width: 77rem;
+    text-align: center;
+    border-radius: 5.5rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.container h1, h2 {
+    font-size: 5rem;
+    font-weight: 100;
+}
+h2{
+    margin: 5rem 0 0 0 ;
+
+}
+.container .time {
+    font-size: 4rem;
+
+}
+
+.container .btn {
+    font-size: 2rem;
+    background-color: var(--color02);
+    border: 1px solid var(--color01);
+    color: var(--color01);
+    padding: 1.5rem 5rem;
+    margin: 1rem;
+    cursor: pointer;
+}
+
+.container .btn:hover{
+    background-color: var(--color01);
+    color: var(--color02);
+}
+
+/* css for responsive */
+@media (max-width: 800px) {
+    html{
+        font-size: 40%;
+    }
+  }
+@media (max-width: 525px) {
+    html{
+        font-size: 30%;
+    }
+  }
+@media (max-width: 400px) {
+    html{
+        font-size: 20%;
+    }
+  }
